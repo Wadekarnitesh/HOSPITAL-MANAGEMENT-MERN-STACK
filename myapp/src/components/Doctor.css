@@ -1,0 +1,150 @@
+/* Main layout for Doctors page */
+.main-doc-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f8faff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 40px;
+}
+
+/* Doctor Form Section */
+.form-sections {
+    background: linear-gradient(135deg, #ffffff, #e6f0ff);
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-sections h4 {
+    font-size: 24px;
+    color: #002b5c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-sections form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-sections label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-sections input {
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.form-sections input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-sections button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.form-sections button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+/* Doctors List Section */
+.doctors-section {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctors-section h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #002b5c;
+}
+
+.doctor-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Doctor Card Styling */
+.doctor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.doctor-card:hover {
+    transform: scale(1.02);
+}
+
+.doctor-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-container button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-container button:first-child {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-container button:first-child:hover {
+    background-color: #e0a800;
+}
+
+.btn-container button:last-child {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-container button:last-child:hover {
+    background-color: #bd2130;
+}

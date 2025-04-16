@@ -1,0 +1,168 @@
+/* Global box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Prevent font shrinking on zoom out */
+html {
+    font-size: 16px;
+}
+
+/* Overall container layout */
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap; /* keep them side by side */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f0f4fa;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 40px;
+    overflow-x: auto; /* allow scroll on zoom out */
+}
+
+/* Column for form */
+.flex-column {
+    flex: 1 0 400px;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+/* Form styling */
+.add-form {
+    background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.add-form h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #003366;
+}
+
+.add-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+.add-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.add-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.add-form button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.add-form button:hover {
+    background-color: #218838;
+    transform: scale(1.03);
+}
+
+/* Doctor list container */
+.doctors {
+    flex: 2 0 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Doctor section title */
+.doctors h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Doctor cards container */
+.doctor-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Doctor card styling */
+.doctor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.doctor-card:hover {
+    transform: scale(1.02);
+}
+
+.doctor-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button container inside card */
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-container button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Edit button */
+.btn-container button:first-child {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-container button:first-child:hover {
+    background-color: #e0a800;
+}
+
+/* Delete button */
+.btn-container button:last-child {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-container button:last-child:hover {
+    background-color: #bd2130;
+}
